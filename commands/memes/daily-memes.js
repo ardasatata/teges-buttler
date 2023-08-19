@@ -1,8 +1,8 @@
 const { SlashCommandBuilder } = require("discord.js");
 const { default: api } = require("../../api/memes/base-api");
 
-const getMemeCommand = {
-  data: new SlashCommandBuilder()
+module.exports = {
+	data: new SlashCommandBuilder()
     .setName("meme")
     .setDescription("meme for homies"),
   async execute(interaction) {
@@ -35,5 +35,3 @@ const getMemeCommand = {
     }
   },
 };
-
-export default getMemeCommand;
