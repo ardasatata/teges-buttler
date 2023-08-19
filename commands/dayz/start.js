@@ -6,7 +6,7 @@ module.exports = {
 		.setName('dayz-start')
 		.setDescription('Awas zombie galak!'),
 	async execute(interaction) {
-		await fetchRequest('start');
 		await interaction.reply('Server dinyalakan');
+		await fetchRequest('start');
 	},
 };

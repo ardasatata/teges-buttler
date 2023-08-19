@@ -6,7 +6,7 @@ module.exports = {
 		.setName('dayz-stop')
 		.setDescription('Wayahe turu!'),
 	async execute(interaction) {
-		await fetchRequest('stop');
 		await interaction.reply('Server dimatikan');
+		await fetchRequest('stop');
 	},
 };
