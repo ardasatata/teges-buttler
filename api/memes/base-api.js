@@ -8,7 +8,7 @@ const api = axios.create({
   paramsSerializer: (params) => querystring.stringify(params),
 });
 
-export default {
+module.exports = { 
   get: async (url, customConfig = {}) => {
     return api
       .get(url, {
@@ -16,5 +16,5 @@ export default {
       })
       .then((response) => Promise.resolve(response.data))
       .catch((err) => Promise.reject(err));
-  },
+  }
 };
