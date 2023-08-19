@@ -1,4 +1,4 @@
-const { SlashCommandBuilder, Discord } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const api = require('../../api/memes/base-api');
 
 module.exports = {
@@ -16,7 +16,7 @@ module.exports = {
                 );
                 const randomMeme = response.data.memes[randomMemeIndex];
 
-                const embed = new Discord.MessageEmbed()
+                const embed = new EmbedBuilder()
                     .setColor('#0099ff')
                     .setTitle('meme served <:aryPing:625632187365982228>')
                     .setImage(randomMeme.url);
