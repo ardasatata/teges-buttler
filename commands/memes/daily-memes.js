@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require("discord.js");
-const { default: api } = require("./api");
+const { default: api } = require("../../api/memes/base-api");
 
 const getMemeCommand = {
   data: new SlashCommandBuilder()
